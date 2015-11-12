@@ -18,3 +18,4 @@ github_username:  schultzy51
 # Build settings
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, .ruby-version, .ruby-gemset, .gitignore]
+timezone: America/Chicago
