@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Post!"
+date:   2015-11-11 18:45:42 -0600
+categories: jekyll update
+---
+Test post from `_posts` directory.
+
+Snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the my [Github account][github-account] for more info.
+
+[github-account]: http://github.com/schultzy51
