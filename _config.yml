@@ -12,7 +12,11 @@ description: > # this means to ignore newlines until "baseurl:"
   Some blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.ksdev.io" # the base hostname & protocol for your site
+permalink: /:year/:month/:day/:title/
+paginate: 6
+paginate_path: "/page/:num/"
 github_username:  schultzy51
+gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
