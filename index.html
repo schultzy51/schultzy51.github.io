@@ -5,17 +5,35 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" | downcase }}</span>
         <div class="post-excerpt">{{ post.excerpt }}</div>
-        <div class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">read more &raquo;</a></div>
+        <div class="post-read-more"><a href="{{ post.url | prepend: site.baseurl }}">read more &raquo;</a></div>
       </li>
     {% endfor %}
   </ul>
+
+  {% if paginator.total_pages > 1 %}
+    <div class="paginator">
+      {% if paginator.next_page %}
+        <a class="next_page" href="{{ paginator.next_page_path }}">older</a>
+      {% endif %}
+
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <a class="prev_page" href="/">newer</a>
+        {% else %}
+          <a class="prev_page" href="{{ paginator.previous_page_path }}">newer</a>
+        {% endif %}
+      {% endif %}
+      <div style="clear:both"></div>
+    </div>
+  {% endif %}
+
   <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">rss feed</a></p>
 
 </div>

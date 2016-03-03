@@ -200,6 +200,23 @@
     margin-bottom: 20px;
 }
 
+.post-read-more {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.paginator {
+    margin-top: 20px;
+
+    .next_page {
+        float: left;
+    }
+
+    .prev_page {
+        float: right;
+    }
+}
+
 
 
 /**
