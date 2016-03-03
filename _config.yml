@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Brick overflow
+title: brick overflow
 email: schultzy51@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Some blog
+  some blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.ksdev.io" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/

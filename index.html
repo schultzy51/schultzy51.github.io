@@ -10,9 +10,9 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" | downcase }}</span>
         <div class="post-excerpt">{{ post.excerpt }}</div>
-        <div class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">Read more &raquo;</a></div>
+        <div class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">read more &raquo;</a></div>
       </li>
     {% endfor %}
   </ul>
