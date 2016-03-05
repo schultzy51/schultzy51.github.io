@@ -6,7 +6,7 @@ layout: default
   {% assign c = category | first %}
   {% assign posts = category | last %}
 
-  <div id="category-{{ c }}">{{ c }}</div>
+  <div id="{{ c }}">{{ c }}</div>
   <ul>
     {% for post in posts %}
       {% if post.categories contains c %}
